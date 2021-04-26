@@ -19,4 +19,13 @@ jobs:
         run: date 
       - name: who
         run: whoami
+  test:
+    name: Testing
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Acceptance Test
+        run: echo "Acceptance test ... "
+      - name: Unit test
+        run: echo "Unit testing ... "
 
