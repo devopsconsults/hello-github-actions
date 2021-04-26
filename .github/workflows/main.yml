@@ -11,12 +11,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build
-        run: echo "Building ... "
-      - name: Test
-        run: echo "Testing ... "
-      - name: Release
-        run: echo "Releasing ... "
-      - name: Deploy
-        run: echo "Deploying ... "
+      - name: Dir
+        run: echo $PWD
+      - name: List
+        run: ls -la
+      - name: Date
+        run: date 
+      - name: who
+        run: whoami
 
