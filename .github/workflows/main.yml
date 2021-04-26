@@ -28,4 +28,17 @@ jobs:
         run: echo "Acceptance test ... "
       - name: Unit test
         run: echo "Unit testing ... "
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs:
+      - build
+      - test
+    steps:
+      - name: Azure
+        run: echo "Deploy to Azure ... "
+      - name: AWS
+        run: echo "Deploy to AWS ... "
+      - name: GCP
+        run: echo "Deploy to GCP ... "
 
