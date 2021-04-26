@@ -32,8 +32,15 @@ jobs:
     needs: 
       - build
     steps:
-      - name: Unit test
+      - name: Unit test 2
         run: echo "Unit testing ... "
+  test3:
+    name: Test 3
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Unit test 3
+        run: echo "unit test 3"
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
@@ -47,4 +54,3 @@ jobs:
         run: echo "Deploy to AWS ... "
       - name: GCP
         run: echo "Deploy to GCP ... "
-
