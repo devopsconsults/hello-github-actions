@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - build
-      - test 1
+      - test1
     steps:
       - name: Azure
         run: echo "Deploy to Azure ... "
