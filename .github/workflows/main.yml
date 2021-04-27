@@ -47,6 +47,8 @@ jobs:
     needs:
       - build
       - test1
+      - test2
+      - test3
     steps:
       - name: Azure
         run: echo "Deploy to Azure ... "
