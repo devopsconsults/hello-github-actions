@@ -13,8 +13,8 @@ jobs:
           java-version: 1.8
       - name: Dir
         run: echo $PWD
-      - name: List
-        run: ls -la
+      - name: Error
+        run: exit 1
       - name: Date
         run: date 
       - name: who
